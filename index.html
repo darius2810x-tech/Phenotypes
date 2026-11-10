@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bază de Date Fenotipuri</title>
+    <style>
+        :root {
+            --bg-color: #0b0f19;
+            --card-bg: #131c2e;
+            --neon-cyan: #00f3ff;
+            --neon-glow: rgba(0, 243, 255, 0.3);
+            --text-main: #e2e8f0;
+            --text-muted: #94a3b8;
+            --border-color: #1e293b;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: var(--neon-cyan);
+            font-size: 1.8rem;
+            text-shadow: 0 0 10px var(--neon-glow);
+            margin-bottom: 8px;
+        }
+
+        p.subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .result-box {
+            background: rgba(0, 243, 255, 0.03);
+            border: 1px solid var(--neon-cyan);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 15px var(--neon-glow);
+        }
+
+        .result-box h2 {
+            color: var(--neon-cyan);
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .traits-list {
+            list-style: none;
+            text-align: left;
+            margin-top: 15px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .traits-list li {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 10px 14px;
+            border-radius: 6px;
+            border-left: 3px solid var(--neon-cyan);
+            font-size: 0.95rem;
+        }
+
+        .traits-list strong {
+            color: var(--neon-cyan);
+        }
+
+        footer {
+            margin-top: auto;
+            padding-top: 20px;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Analiză Fenotipică</h1>
+        <p class="subtitle">Sistem de clasificare biometrică și antropometrică</p>
+    </header>
+
+    <div class="container">
+        <div class="result-box">
+            <h2>Fenotip Principal: European</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">Rezultat implicit configurat pentru această sesiune.</p>
+            
+            <ul class="traits-list">
+                <li><strong>Origine / Distribuție:</strong> Europa Centrală, de Vest și de Est</li>
+                <li><strong>Caracteristici Craniofaciale:</strong> Leptoprosop, proeminență nazală medie spre ridicată</li>
+                <li><strong>Pigmentare:</strong> Variabilă (ochii deschiși/medii, ton cutanat deschis)</li>
+                <li><strong>Indice Cefalic:</strong> Mezocefal / Dolihocefal</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Fenotipuri - Toate drepturile rezervate</p>
+    </footer>
+
+</body>
+</html>
